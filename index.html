@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perreo Label - Lucha por la Música Orgánica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .hero-bg {
+            background-color: #111827;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(37, 99, 235, 0.15) 0%, transparent 50%);
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-secondary {
+            background-color: #374151;
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+        .card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+        }
+        .grid-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 2rem 2rem;
+            opacity: 0.3;
+            z-index: 0;
+        }
+         .btn-discord {
+            background-color: #5865F2; /* Discord Blue */
+            transition: background-color 0.3s ease;
+        }
+        .btn-discord:hover {
+            background-color: #4752C4;
+        }
+        .btn-whatsapp {
+             background-color: #25D366; /* WhatsApp Green */
+             transition: background-color 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1EBE57;
+        }
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            transition: opacity 0.3s ease;
+        }
+        .btn-instagram:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="py-4 px-6 md:px-12 fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- LOGO: Replace the src with the path to your logo file -->
+            <img src="images/logo-perrreo-white-text.png" alt="Perreo Label Logo" class="h-8 w-auto">
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#comolohacemos" class="text-gray-300 hover:text-white transition">Cómo lo hacemos</a>
+                <a href="#beneficios" class="text-gray-300 hover:text-white transition">Beneficios</a>
+                <a href="#unete" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">Únete</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden text-white">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+             </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#comolohacemos" class="block text-gray-300 hover:text-white transition py-2">Cómo lo hacemos</a>
+            <a href="#beneficios" class="block text-gray-300 hover:text-white transition py-2">Beneficios</a>
+            <a href="#unete" class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition mt-2 text-center">Únete</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
+            <div class="grid-pattern"></div>
+            <div class="container mx-auto px-6 text-center z-10">
+                <h2 class="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tighter mb-4">
+                    ¡Tu Música Merece Ser <br class="hidden md:block" /><span class="text-blue-500">Escuchada de Verdad!</span>
+                </h2>
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-8">
+                    ¿Cansado de competir contra bots y números inflados? El streaming fraudulento es un problema real. Te presentamos una comunidad dedicada a promover el streaming orgánico y auténtico.
+                </p>
+                <a href="#unete" class="btn-primary text-white font-bold py-3 px-8 rounded-lg text-lg inline-block">
+                    ¡Cambia las reglas del juego!
+                </a>
+                
+                <!-- Album Covers -->
+                <div class="mt-16 relative flex justify-center items-center h-64">
+                    <img src="images/gtuneneflavor.jpg" alt="Portada del álbum Gtunene Flavor" class="rounded-lg shadow-2xl absolute transform -rotate-12 hover:rotate-0 hover:scale-110 transition-transform duration-300 w-32 h-32 md:w-48 md:h-48 object-cover" style="left: 20%; top: 10%;">
+                    <img src="images/vomitandoflow.jpg" alt="Portada del álbum Vomitando Flow" class="rounded-lg shadow-2xl absolute z-10 transform scale-110 hover:scale-125 transition-transform duration-300 w-40 h-40 md:w-56 md:h-56 object-cover">
+                    <img src="images/lomasnuevo2023.jpg" alt="Portada del álbum Lo Mas Nuevo 2023" class="rounded-lg shadow-2xl absolute transform rotate-12 hover:rotate-0 hover:scale-110 transition-transform duration-300 w-32 h-32 md:w-48 md:h-48 object-cover" style="right: 20%; top: 10%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- "Cómo lo hacemos" Section -->
+        <section id="comolohacemos" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl md:text-5xl font-black text-white">¿Cómo lo hacemos?</h3>
+                    <p class="text-lg text-gray-400 mt-2">Nos basamos en un método de apoyo mutuo y colaboración.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="card p-8 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <h4 class="text-2xl font-bold text-white">Fomentamos el Apoyo Real</h4>
+                        </div>
+                        <p class="text-gray-300">
+                            Creamos una red de colaboración donde los miembros se apoyan para identificar y promocionar música auténtica.
+                        </p>
+                    </div>
+                    <div class="card p-8 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-8 h-8 text-blue-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <h4 class="text-2xl font-bold text-white">Verificamos la Autenticidad</h4>
+                        </div>
+                        <p class="text-gray-300">
+                            Utilizamos un sistema de reportes que nos ayuda a analizar datos y a verificar la legitimidad de las escuchas, combatiendo las transmisiones falsas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Beneficios" Section -->
+        <section id="beneficios" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl md:text-5xl font-black text-white">Beneficios para ti como artista</h3>
+                    <p class="text-lg text-gray-400 mt-2">Únete a un ecosistema musical más justo y transparente.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Protege tus Ingresos -->
+                    <div class="card p-6 rounded-xl text-center">
+                        <svg class="w-12 h-12 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <h4 class="text-xl font-bold text-white mb-2">Protege tus Ingresos</h4>
+                        <p class="text-gray-400">Asegúrate de que las regalías vayan a los artistas que han ganado su audiencia de manera genuina.</p>
+                    </div>
+                    <!-- Card 2: Obtén Métricas Reales -->
+                    <div class="card p-6 rounded-xl text-center">
+                        <svg class="w-12 h-12 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <h4 class="text-xl font-bold text-white mb-2">Obtén Métricas Reales</h4>
+                        <p class="text-gray-400">Ten una idea clara de tu popularidad y alcance sin la distorsión de números inflados.</p>
+                    </div>
+                    <!-- Card 3: Construye Fans Sólidos -->
+                    <div class="card p-6 rounded-xl text-center">
+                        <svg class="w-12 h-12 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        <h4 class="text-xl font-bold text-white mb-2">Construye Fans Sólidos</h4>
+                        <p class="text-gray-400">Enfócate en el crecimiento orgánico y en conectar con una audiencia real y comprometida.</p>
+                    </div>
+                    <!-- Card 4: Industria Más Justa -->
+                    <div class="card p-6 rounded-xl text-center">
+                         <svg class="w-12 h-12 text-blue-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        <h4 class="text-xl font-bold text-white mb-2">Industria Más Justa</h4>
+                        <p class="text-gray-400">Contribuye a un ecosistema musical donde la autenticidad y el talento son lo más importante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="unete" class="py-20 bg-blue-900/50">
+            <div class="container mx-auto px-6 text-center">
+                 <h3 class="text-4xl md:text-5xl font-black text-white">¡Únete a la Lucha por la Música Orgánica!</h3>
+                 <p class="text-lg text-gray-300 mt-4 mb-8 max-w-2xl mx-auto">Forma parte de nuestra comunidad y ayúdanos a construir una industria musical más transparente y auténtica.</p>
+                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    
+                    <!-- Discord Button -->
+                    <a href="https://discord.gg/2prUZuRp4h" target="_blank" rel="noopener noreferrer" class="btn-discord text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center w-full sm:w-auto">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.317 4.36981C18.7915 3.72559 17.182 3.28418 15.524 3.00018C15.2955 3.44159 15.0285 3.96159 14.7845 4.36981C12.9885 3.96159 11.231 3.96159 9.4465 4.36981C9.1915 3.96159 8.9245 3.44159 8.696 3.00018C7.038 3.28418 5.4285 3.72559 3.903 4.36981C0.957 8.17381 0.222 11.8018 1.088 15.3118C2.922 16.5418 4.7175 17.3458 6.484 17.9278C6.9615 17.4198 7.3775 16.8618 7.7435 16.2658C7.1175 16.0008 6.5205 15.6978 5.9525 15.3558C6.0225 15.2858 6.0925 15.2048 6.1625 15.1348C10.159 17.4298 14.119 17.4298 18.055 15.1348C18.125 15.2048 18.195 15.2858 18.265 15.3558C17.697 15.6978 17.1 16.0008 16.474 16.2658C16.84 16.8618 17.256 17.4198 17.7335 17.9278C19.5 17.3458 21.2955 16.5418 23.1295 15.3118C24.084 11.4178 23.2285 7.78081 20.317 4.36981ZM8.182 13.1318C7.216 13.1318 6.42 12.3178 6.42 11.3218C6.42 10.3258 7.205 9.51181 8.182 9.51181C9.159 9.51181 9.955 10.3258 9.944 11.3218C9.944 12.3178 9.159 13.1318 8.182 13.1318ZM16.041 13.1318C15.075 13.1318 14.279 12.3178 14.279 11.3218C14.279 10.3258 15.064 9.51181 16.041 9.51181C17.018 9.51181 17.814 10.3258 17.803 11.3218C17.803 12.3178 17.018 13.1318 16.041 13.1318Z"></path></svg>
+                        Discord
+                    </a>
+                    
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/perreolabel" target="_blank" rel="noopener noreferrer" class="btn-instagram text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center w-full sm:w-auto">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802C8.843 3.965 8.588 3.977 7.336 4.033c-2.448.113-3.698 1.363-3.809 3.808-.056 1.252-.066 1.507-.066 4.159s.01 2.907.066 4.159c.111 2.448 1.361 3.698 3.809 3.808 1.252.056 1.507.066 4.159.066s2.907-.01 4.159-.066c2.448-.111 3.698-1.361 3.808-3.808.056-1.252.066-1.507.066-4.159s-.01-2.907-.066-4.159c-.111-2.448-1.361-3.698-3.808-3.808-1.252-.056-1.507-.066-4.159-.066zM12 6.837c-2.848 0-5.163 2.315-5.163 5.163s2.315 5.163 5.163 5.163 5.163-2.315 5.163-5.163S14.848 6.837 12 6.837zm0 8.529c-1.862 0-3.368-1.506-3.368-3.368s1.506-3.368 3.368-3.368 3.368 1.506 3.368 3.368-1.506 3.368-3.368 3.368zm4.935-6.405c-.781 0-1.414.633-1.414 1.414s.633 1.414 1.414 1.414 1.414-.633 1.414-1.414-.633-1.414-1.414-1.414z" clip-rule="evenodd"></path></svg>
+                        Instagram
+                    </a>
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/393470935726" target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center w-full sm:w-auto">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12.04 2.01C6.58 2.01 2.13 6.46 2.13 11.92c0 1.77.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.5 14.3c-.28-.14-1.65-.81-1.9-0.91s-.44-.14-.62.14-.72.91-.88 1.09-.32.21-.6.07c-1.13-.56-2.26-1.39-3.23-2.73-.24-.33-.01-.51.13-.65.12-.12.28-.33.42-.49.1-.12.18-.21.28-.35.09-.14.05-.28-.02-.42s-.62-1.5-0.85-2.05c-.22-.54-.45-.47-.62-.47h-.52c-.18 0-.46.07-.7.35-.24.28-.92.9-0.92 2.2 0 1.3.94 2.55 1.08 2.73s1.85 2.81 4.48 3.93c.63.27 1.1.43 1.48.55.55.18 1.05.15 1.44.09.44-.06 1.39-.57 1.58-1.13.2-.56.2-1.04.14-1.13-.07-.09-.25-.14-.52-.28z"></path></svg>
+                        WhatsApp
+                    </a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2024 Perreo Label. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Construyendo una industria musical más justa.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
